@@ -22,8 +22,8 @@ for table_name in list_of_tables:
     list_of_dataframes.append([table_name, new_df])
 
 # CREATE VIEWS
-    for df in list_of_dataframes:
-        df[1].createOrReplaceTempView(df[0])
+for df in list_of_dataframes:
+    df[1].createOrReplaceTempView(df[0])
 
 # QUERIES
 print('QUESTION 1')
